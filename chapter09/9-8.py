@@ -37,8 +37,8 @@ class Admin(User):
 
 class Privileges:
     """Separate class to store privileges of a user and display the details"""
-    def __init__(self,privileges):
-        self.privileges = ["can add post", "can delete post", "can ban user"]
+    def __init__(self,privileges=["can add post", "can delete post", "can ban user"]):
+        self.privileges = privileges
 
     def show_privileges(self):
         print(f"Admin user has following privileges")
@@ -47,3 +47,4 @@ class Privileges:
 
 chandra_user = Admin('chandrashekar', 'y m', 40, 'sydney', 'australia')
 chandra_user.describe_user()
+chandra_user.privileges.show_privileges()
