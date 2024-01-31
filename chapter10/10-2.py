@@ -7,7 +7,7 @@ lines = contents.splitlines()
 about_python = ''
 
 for line in lines:
-    line.replace('Python','C')
+    line = line.replace('Python','C')
     about_python += line
 
 print(about_python)
