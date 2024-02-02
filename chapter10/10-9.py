@@ -5,7 +5,8 @@ def print_animal(path):
     try:
         contents = path.read_text()
     except FileNotFoundError:
-        print(f"File {path} not found")
+        # print(f"File {path} not found")
+        pass
     else:
         lines = contents.splitlines()
         print(f"Names of animals in file {path} are:")
