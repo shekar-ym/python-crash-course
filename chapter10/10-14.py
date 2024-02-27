@@ -21,7 +21,9 @@ def greet_user():
     """Greet user by name"""
     path = Path('username5.json')
     user_name = get_stored_username(path)
-    if user_name:
+    print(user_name)
+    user_respone = input("Is this your user name, Yes or No? ")
+    if user_respone == "Yes":
         print(f"Welcome back, {user_name}")
     else:
         user_name = get_new_username(path)
