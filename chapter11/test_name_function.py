@@ -4,3 +4,8 @@ def test_first_last_name():
     """Do names like 'Janis Joplin' work ?"""
     formatted_name = get_formatted_name('janis','joplin')
     assert formatted_name == 'Janis Joplin'
+
+def test_first_middle_last_name():
+    """Do names like 'Sheldon Lee Cooper' work?"""
+    formatted_name = get_formatted_name('sheldon', 'cooper', 'lee')
+    assert formatted_name == 'Sheldon Lee Cooper'
